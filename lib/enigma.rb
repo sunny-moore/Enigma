@@ -15,4 +15,14 @@ class Enigma
     str = random_number.to_s[1,6]
     @key = str
   end
+  def get_key_hash
+    key_hash = Hash.new
+    i = 1
+    while i < 5
+      int_string = @key[i, 2]
+      key_hash[i] = int_string.to_i
+      i += 1
+    end
+    key_hash
+  end
 end
