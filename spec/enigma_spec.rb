@@ -1,5 +1,6 @@
 require 'pry'
 require 'RSpec'
+require 'date'
 require 'enigma'
 
 describe Enigma do
@@ -11,6 +12,9 @@ describe Enigma do
     end
     it "starts with an default string key" do
       expect(@cipher.key).to eq("0.000000")
+    end
+    it "starts with a default date of today in MMDDYY" do
+      expect(@cipher.date).to eq(Date.today.strftime("%m%d%y"))
     end
     it "has a stored character set" do
       expect(@cipher.char_set).to be_a Array
