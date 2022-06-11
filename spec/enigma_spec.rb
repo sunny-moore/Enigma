@@ -28,14 +28,16 @@ describe Enigma do
       @cipher.set_key
       expect(@cipher.key).to be_a String
       expect(@cipher.key[0]).to eq(".")
-      expect(@cipher.key.length).to be = 6
+      expect(@cipher.key.length).to eq(6)
     end
     it "can return a hash with 4 integer values from key" do
-      expect(@cipher.get_key_hash).to be_a Hash
-      expect(@cipher.get_key_hash.length).to eq(4)
-      expect(@cipher.get_key_hash[1]).to be_a Integer
-      expect(@cipher.get_key_hash[2]).to be_a Integer
-      expect(@cipher.get_key_hash[3]).to be_a Integer
-      expect(@cipher.get_key_hash[4]).to be_a Integer
+      @cipher.set_key
+      expected = @cipher.get_key_hash
+      expect(expected).to be_a Hash
+      expect(expected.length).to eq(4)
+      expect(expected[1]).to be_a Integer
+      expect(expected[2]).to be_a Integer
+      expect(expected[3]).to be_a Integer
+      expect(expected[4]).to be_a Integer
     end
 end
