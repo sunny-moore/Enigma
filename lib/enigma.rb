@@ -2,11 +2,12 @@ require 'pry'
 require 'date'
 
 class Enigma
-  attr_reader :char_set, :key
+  attr_reader :char_set, :key, :date
 
   def initialize()
     @char_set = ("a".."z").to_a << " "
     @key = "0.000000"
+    @date = Date.today.strftime("%m%d%y")
   end
   def random_number()
     num = rand().round(10)
