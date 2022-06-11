@@ -16,14 +16,26 @@ class Enigma
     str = random_number.to_s[1,6]
     @key = str
   end
+  
   def get_key_hash
     key_hash = Hash.new
     i = 1
     while i < 5
-      int_string = @key[i, 2]
-      key_hash[i] = int_string.to_i
+      key_hash[i] = @key[i, 2].to_i
       i += 1
     end
     key_hash
+  end
+
+  def get_offset_hash
+    num = date.to_i ** 2
+    str = num.to_s[-4, 4]
+    offset_hash = Hash.new
+    i = 1
+    while i < 5
+      offset_hash[i] = str[i-1].to_i
+      i += 1
+    end
+    offset_hash
   end
 end
