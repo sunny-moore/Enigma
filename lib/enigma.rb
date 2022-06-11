@@ -2,14 +2,17 @@ require 'pry'
 require 'date'
 
 class Enigma
-  attr_reader :char_set
+  attr_reader :char_set, :key
 
   def initialize()
     @char_set = ("a".."z").to_a << " "
+    @key = "0.000000"
   end
   def random_number()
-    num = rand().round(6)
-    # binding.pry
-    num
+    num = rand().round(10)
+  end
+  def set_key
+    str = random_number.to_s[1,6]
+    @key = str
   end
 end
