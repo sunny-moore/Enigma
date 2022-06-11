@@ -44,4 +44,14 @@ describe Enigma do
       expect(expected[3]).to be_a Integer
       expect(expected[4]).to be_a Integer
     end
+    it "can calculate offset based on date and return a hash of integer key/value pairs" do
+      @cipher.set_key
+      expected = @cipher.get_offset_hash
+      expect(expected).to be_a Hash
+      expect(expected.length).to eq(4)
+      expect(expected[1]).to be_a Integer
+      expect(expected[2]).to be_a Integer
+      expect(expected[3]).to be_a Integer
+      expect(expected[4]).to be_a Integer
+    end
 end
