@@ -8,8 +8,8 @@ class Encrypt
     @enigma = Enigma.new
     @incoming_text = ""
   end
-  def file_open
-    handler = File.open(ARGV[0], "r")
+  def file_open(filename = ARGV[0])
+    handler = File.open(filename, "r")
     @incoming_text = handler.read
     handler.close
   end
