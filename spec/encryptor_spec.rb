@@ -18,7 +18,14 @@ describe Encryptor do
     expect(@encryptor.incoming_text).to be_a String
     expect(@encryptor.incoming_text).to eq("")
   end
-
+  it "starts with an empty outgoing_text variable" do
+    expect(@encryptor.outgoing_text).to be_a String
+    expect(@encryptor.outgoing_text).to eq("")
+  end
+  it "starts with an empty encrypt_result hash" do
+    expect(@encryptor.encrypt_result).to be_a Hash
+    expect(@encryptor.encrypt_result).to eq({})
+  end
   context 'file_handler module methods' do
     it "can read in a msg file ('hello world')" do
       #\n means length will be one more than msg
@@ -27,14 +34,6 @@ describe Encryptor do
       expect(@encryptor.incoming_text.length).to eq(12)
       expect(@encryptor.incoming_text).to eq("hello world\n")
       expect(File.open("message.txt").count).to eq(1)
-    end
-    it "starts with an empty outgoing_text variable" do
-      expect(@encryptor.outgoing_text).to be_a String
-      expect(@encryptor.outgoing_text).to eq("")
-    end
-    it "starts with an empty encrypt_result hash" do
-      expect(@encryptor.encrypt_result).to be_a Hash
-      expect(@encryptor.encrypt_result).to eq({})
     end
     it "can encrypt incoming txt and store in encrypt_result" do
       @encryptor.open("message.txt")
@@ -78,22 +77,5 @@ describe Encryptor do
       expect(expected.length).to eq(12)
       expect(expected).to eq("keder ohulw\n")
     end
-  end
-  it "has a start method to open file, encrypt and write file" do
-    @encryptor.start("message.txt", "encrypted.txt")
-
-    expect(@encryptor.incoming_text).to eq("hello world\n")
-    expect(File.open("message.txt").count).to eq(1)
-    expect(@encryptor.outgoing_text).to eq("keder ohulw\n")
-    expect(File.readable?("encrypted.txt")).to eq(true)
-  end
-  it "creates encrypted.txt file with encrypted message" do
-    handler = File.open("encrypted.txt", "r")
-    expected = handler.read
-    handler.close
-
-    expect(expected).to be_a String
-    expect(expected.length).to eq(12)
-    expect(expected).to eq("keder ohulw\n")
   end
 end
