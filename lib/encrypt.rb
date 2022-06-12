@@ -18,7 +18,8 @@ class Encrypt
     @incoming_text = handler.read
     handler.close
   end
-  def encryptor
-    @outgoing_text = @enigma.encrypt(@incoming_text)[:encryption]
+  def encryptor(key = ".00000", date)
+    @encrypt_result = @enigma.encrypt(@incoming_text, key, date)
+    @outgoing_text = @encrypt_result[:encryption]
   end
 end
