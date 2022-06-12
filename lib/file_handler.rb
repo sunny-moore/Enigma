@@ -8,4 +8,11 @@ module FileHandler
     handler.close
     @incoming_text
   end
+
+  def self.write(filename = ARGV[1], message)
+    writer = File.open(filename, "w")
+    writer.write(message)
+    writer.close
+    message
+  end
 end
