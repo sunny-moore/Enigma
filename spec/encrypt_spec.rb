@@ -11,4 +11,7 @@ describe Encrypt do
   it "exists" do
     expect(@encrypt).to be_a Encrypt
   end
+  it "starts with an Enigma object" do
+    expect(@encrypt.enigma).to be_a Enigma
+  end
 end
