@@ -32,5 +32,14 @@ describe Encrypt do
   end
   it "starts with an empty encrypt_result hash" do
     expect(@encrypt.encrypt_result).to be_a Hash
+    expect(@encrypt.encrypt_result).to eq({})
+  end
+  it "can encrypt incoming txt and store in encrypt_result" do
+    @encrypt.file_open("message.txt")
+    @encrypt.encryptor("02715", "040895")
+    expect(@encrypt.encrypt_result).to be_a Hash
+    expect(@encrypt.encrypt_result[:encryption]).to eq("keder ohulw\n")
+    expect(@encrypt.encrypt_result[:key]).to eq("02715")
+    expect(@encrypt.encrypt_result[:date]).to eq("040895")
   end
 end
