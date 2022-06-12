@@ -84,4 +84,9 @@ describe Enigma do
       expect(expected[:key]).to eq("02715")
       expect(expected[:date]).to eq("040895")
     end
+    it "encrypts characters not in the character set as themselves" do
+      expected = @cipher.encrypt("hello world!", "02715", "040895")
+      expect(expected[:encryption]).to eq("keder ohulw!")
+    end
+  
 end
