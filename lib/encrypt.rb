@@ -22,4 +22,9 @@ class Encrypt
     @encrypt_result = @enigma.encrypt(@incoming_text, key, date)
     @outgoing_text = @encrypt_result[:encryption]
   end
+  def file_write(filename = ARGV[1])
+    writer = File.open(filename, "w")
+    writer.write(@outgoing_text)
+    writer.close
+  end
 end
