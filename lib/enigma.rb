@@ -16,7 +16,7 @@ class Enigma
     str = random_number.to_s[1,6]
     @key = str
   end
-  
+
   def get_key_hash
     key_hash = Hash.new
     i = 1
@@ -37,5 +37,17 @@ class Enigma
       i += 1
     end
     offset_hash
+  end
+
+  def get_shift_hash
+    shift_hash = Hash.new
+    key_hash = get_key_hash
+    offset_hash = get_offset_hash
+    i = 1
+    while i < 5
+      shift_hash[i] = key_hash[i] + offset_hash[i]
+      i += 1
+    end
+    shift_hash
   end
 end
