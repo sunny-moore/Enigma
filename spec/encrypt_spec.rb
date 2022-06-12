@@ -14,4 +14,8 @@ describe Encrypt do
   it "starts with an Enigma object" do
     expect(@encrypt.enigma).to be_a Enigma
   end
+  it "starts with an empty incoming_text variable" do
+    expect(@encrypt.incoming_text).to be_a String
+    expect(@encrypt.incoming_text).to eq("")
+  end
 end
