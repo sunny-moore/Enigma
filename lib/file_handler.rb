@@ -2,14 +2,14 @@ require 'pry'
 
 module FileHandler
 
-  def self.open(filename = ARGV[0])
+  def open(filename)
     handler = File.open(filename, "r")
     @incoming_text = handler.read
     handler.close
     @incoming_text
   end
 
-  def self.write(filename = ARGV[1], message)
+  def write(filename, message)
     writer = File.open(filename, "w")
     writer.write(message)
     writer.close
