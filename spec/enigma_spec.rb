@@ -11,7 +11,7 @@ describe Enigma do
       expect(@cipher).to be_a Enigma
     end
     it "starts with an default string key" do
-      expect(@cipher.key).to eq("0.000000")
+      expect(@cipher.key).to eq(".000000")
     end
     it "starts with a default date of today in MMDDYY" do
       expect(@cipher.date).to eq(Date.today.strftime("%m%d%y"))
@@ -64,5 +64,18 @@ describe Enigma do
       expect(expected[3]).to be_a Integer
       expect(expected[4]).to be_a Integer
     end
-
+    it "can encrypt a message with given key and date" do
+      expected = @cipher.encrypt("hello world", "02715", "040895")
+      expect(expected[:encryption]).to eq("keder ohulw")
+      expect(expected[:key]).to eq("02715")
+      expect(expected[:date]).to eq("040895")
+    end
+    it "encrypts characters not in the character set as themselves" do
+      expected = @cipher.encrypt("hello world!", "02715", "040895")
+      expect(expected[:encryption]).to eq("keder ohulw!")
+    end
+    it "encrypts capital letters as lowercase" do
+      expected = @cipher.encrypt("Hello World", "02715", "040895")
+      expect(expected[:encryption]).to eq("keder ohulw")
+    end
 end
