@@ -15,10 +15,10 @@ class Encryptor
     @encrypt_result = Hash.new
   end
 
-  def start
-    file_open(filename = ARGV[0])
+  def start(incoming_file = ARGV[0], outgoing_file = ARGV[1])
+    file_open(incoming_file)
     encrypt(key = "02715", date = "040895")
-    file_write(filename = ARGV[1])
+    file_write(outgoing_file)
   end
   def file_open(filename)
     # binding.pry

@@ -59,4 +59,21 @@ describe Encryptor do
     expect(expected.length).to eq(12)
     expect(expected).to eq("keder ohulw\n")
   end
+  it "has a start method to open file, encrypt and write file" do
+    @encryptor.start("message.txt", "encrypted.txt")
+
+    expect(@encryptor.incoming_text).to eq("hello world\n")
+    expect(File.open("message.txt").count).to eq(1)
+    expect(@encryptor.outgoing_text).to eq("keder ohulw\n")
+    expect(File.readable?("encrypted.txt")).to eq(true)
+  end
+  it "creates encrypted.txt file with encrypted message" do
+    handler = File.open("encrypted.txt", "r")
+    expected = handler.read
+    handler.close
+
+    expect(expected).to be_a String
+    expect(expected.length).to eq(12)
+    expect(expected).to eq("keder ohulw\n")
+  end
 end
