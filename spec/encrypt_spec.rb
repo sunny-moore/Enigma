@@ -23,9 +23,14 @@ describe Encrypt do
     @encrypt.file_open("message.txt")
     expect(@encrypt.incoming_text).to be_a String
     expect(@encrypt.incoming_text.length).to eq(12)
+    expect(@encrypt.incoming_text).to eq("hello world\n")
+    expect(File.open("message.txt").count).to eq(1)
   end
   it "starts with an empty outgoing_text variable" do
     expect(@encrypt.outgoing_text).to be_a String
     expect(@encrypt.outgoing_text).to eq("")
+  end
+  it "starts with an empty encrypt_result hash" do
+    expect(@encrypt.encrypt_result).to be_a Hash
   end
 end
