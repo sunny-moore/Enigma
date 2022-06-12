@@ -78,4 +78,18 @@ describe Enigma do
       expected = @cipher.encrypt("Hello World", "02715", "040895")
       expect(expected[:encryption]).to eq("keder ohulw")
     end
+    it "can decrypt a message with given key and date" do
+      expected = @cipher.decrypt("keder ohulw", "02715", "040895")
+      expect(expected[:encryption]).to eq("hello world")
+      expect(expected[:key]).to eq("02715")
+      expect(expected[:date]).to eq("040895")
+    end
+    it "decrypts characters not in the character set as themselves" do
+      expected = @cipher.encrypt("hello world!", "02715", "040895")
+      expect(expected[:encryption]).to eq("keder ohulw!")
+    end
+    it "decrypts capital letters as lowercase" do
+      expected = @cipher.encrypt("Hello World", "02715", "040895")
+      expect(expected[:encryption]).to eq("keder ohulw")
+    end
 end

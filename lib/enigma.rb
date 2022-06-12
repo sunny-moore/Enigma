@@ -66,9 +66,29 @@ class Enigma
         rotated = @char_set.rotate(@char_set.index(char))
         shift_index = the_shift[i % 4 + 1] % 27
         encrypted_msg += rotated[shift_index]
-        # binding.pry
       end
     end
     {:encryption => encrypted_msg, :key => @key[1,5], :date => @date}
+  end
+
+  def decrypt(ciphertext, key = @key, date = @date)
+    @date = date
+    if @key[0] = "."
+      @key = "." + key
+    else
+      set_key
+    end
+    the_shift = get_shift_hash
+    decrypted_msg = ""
+    ciphertext.downcase.chars.each_with_index do |char, i|
+      if char_set.include?(char) == false
+        decrypted_msg += char
+      else
+        rotated = @char_set.rotate(@char_set.index(char) + 1)
+        shift_index = (the_shift[i % 4 + 1] % 27)
+        decrypted_msg += rotated[rotated.length - (shift_index + 1)]
+      end
+    end
+    {:encryption => decrypted_msg, :key => @key[1,5], :date => @date}
   end
 end
