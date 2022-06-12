@@ -18,4 +18,11 @@ describe Encrypt do
     expect(@encrypt.incoming_text).to be_a String
     expect(@encrypt.incoming_text).to eq("")
   end
+  it "can read in a msg file ('hello world')" do
+    #\n means length will be one more than msg
+    @encrypt.file_open("message.txt")
+    expect(@encrypt.incoming_text).to be_a String
+    expect(@encrypt.incoming_text.length).to eq(12)
+  end
+
 end
