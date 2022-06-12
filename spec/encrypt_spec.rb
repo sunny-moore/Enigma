@@ -42,4 +42,21 @@ describe Encrypt do
     expect(@encrypt.encrypt_result[:key]).to eq("02715")
     expect(@encrypt.encrypt_result[:date]).to eq("040895")
   end
+  it "can write in encrypted.txt file ('keder ohulw\n')" do
+    #\n means length will be one more than msg
+    @encrypt.file_open("message.txt")
+    @encrypt.encryptor("02715", "040895")
+    @encrypt.file_write("encrypted.txt")
+    expect(@encrypt.outgoing_text).to be_a String
+    expect(@encrypt.outgoing_text.length).to eq(12)
+    expect(@encrypt.outgoing_text).to eq("keder ohulw\n")
+
+    handler = File.open("encrypted.txt", "r")
+    expected = handler.read
+    handler.close
+
+    expect(expected).to be_a String
+    expect(expected.length).to eq(12)
+    expect(expected).to eq("keder ohulw\n")
+  end
 end
