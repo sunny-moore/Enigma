@@ -24,5 +24,8 @@ describe Encrypt do
     expect(@encrypt.incoming_text).to be_a String
     expect(@encrypt.incoming_text.length).to eq(12)
   end
-
+  it "starts with an empty outgoing_text variable" do
+    expect(@encrypt.outgoing_text).to be_a String
+    expect(@encrypt.outgoing_text).to eq("")
+  end
 end
