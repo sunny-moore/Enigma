@@ -89,6 +89,6 @@ class Enigma
         decrypted_msg += rotated[rotated.length - (shift_index + 1)]
       end
     end
-    {:encryption => decrypted_msg, :key => @key[1,5], :date => @date}
+    {:decryption => decrypted_msg, :key => @key[1,5], :date => @date}
   end
 end
