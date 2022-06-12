@@ -54,4 +54,15 @@ describe Enigma do
       expect(expected[3]).to be_a Integer
       expect(expected[4]).to be_a Integer
     end
+    it "can return a shift hash based on key and offset hashes" do
+      @cipher.set_key
+      expected = @cipher.get_shift_hash
+      expect(expected).to be_a Hash
+      expect(expected.length).to eq(4)
+      expect(expected[1]).to be_a Integer
+      expect(expected[2]).to be_a Integer
+      expect(expected[3]).to be_a Integer
+      expect(expected[4]).to be_a Integer
+    end
+
 end
