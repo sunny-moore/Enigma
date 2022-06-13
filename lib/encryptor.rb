@@ -18,10 +18,11 @@ class Encryptor
     @encrypt_result = Hash.new
   end
 
-  def start(incoming_file = ARGV[0], outgoing_file = ARGV[1])
+  def start(incoming_file = ARGV[0], outgoing_file = ARGV[1], key = ARGV[2], date = ARGV[3])
     @incoming_text = open(incoming_file)
-    encrypt(key = "02715", date = "040895")
+    encrypt(key, date)
     write(outgoing_file, @outgoing_text)
+    puts "Created '#{outgoing_file}' with the key #{@enigma.key[1,5]} and date #{@enigma.date}"
   end
 
   def encrypt(key, date)
