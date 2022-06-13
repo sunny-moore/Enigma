@@ -28,7 +28,7 @@ describe Decryptor do
   end
 
   context 'file_handler module methods' do
-    it "can read in a msg file ('hello world')" do
+    it "can read in a encrypted file ('keder ohulw')" do
       #\n means length will be one more than msg
       @decryptor.open("encrypted.txt")
       expect(@decryptor.incoming_text).to be_a String
@@ -62,7 +62,7 @@ describe Decryptor do
       expect(expected).to eq("hello world\n")
     end
     it "has a start method to open file, decrypt and write file" do
-      @decryptor.start("encrypted.txt", "decrypted.txt")
+      @decryptor.start("encrypted.txt", "decrypted.txt", "02715", "040895")
 
       expect(@decryptor.incoming_text).to eq("keder ohulw\n")
       expect(File.open("encrypted.txt").count).to eq(1)

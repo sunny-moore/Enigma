@@ -50,14 +50,11 @@ class Enigma
     end
     shift_hash
   end
-  def encrypt(message, key = @key, date = @date)
+  def encrypt(message, key = @key , date = @date)
     @date = date
     @key = key
-    if @key == nil
-      set_key
-    else
-      @key = "." + key
-    end
+    check_key(@key)
+    check_date(@date)
     the_shift = get_shift_hash
     encrypted_msg = ""
     message.downcase.chars.each_with_index do |char, i|
@@ -75,11 +72,8 @@ class Enigma
   def decrypt(ciphertext, key = @key, date = @date)
     @date = date
     @key = key
-    if @key == nil
-      set_key
-    else
-      @key = "." + key
-    end
+    check_key(@key)
+    check_date(@date)
     the_shift = get_shift_hash
     decrypted_msg = ""
     ciphertext.downcase.chars.each_with_index do |char, i|
@@ -92,5 +86,19 @@ class Enigma
       end
     end
     {:decryption => decrypted_msg, :key => @key[1,5], :date => @date}
+  end
+  def check_key(key)
+    if key.nil?
+      set_key
+    else
+      @key = "." + key
+    end
+  end
+  def check_date(date)
+    if date.nil?
+      @date = Date.today.strftime("%m%d%y")
+    else
+      @date = date
+    end
   end
 end

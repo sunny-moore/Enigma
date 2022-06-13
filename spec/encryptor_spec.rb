@@ -61,7 +61,7 @@ describe Encryptor do
       expect(expected).to eq("keder ohulw\n")
     end
     it "has a start method to open file, encrypt and write file" do
-      @encryptor.start("message.txt", "encrypted.txt")
+      @encryptor.start("message.txt", "encrypted.txt", "02715", "040895")
 
       expect(@encryptor.incoming_text).to eq("hello world\n")
       expect(File.open("message.txt").count).to eq(1)
