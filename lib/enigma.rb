@@ -6,7 +6,7 @@ class Enigma
 
   def initialize()
     @char_set = ("a".."z").to_a << " "
-    @key = ".000000"
+    @key = nil
     @date = Date.today.strftime("%m%d%y")
   end
   def random_number()
@@ -52,10 +52,11 @@ class Enigma
   end
   def encrypt(message, key = @key, date = @date)
     @date = date
-    if @key[0] = "."
-      @key = "." + key
-    else
+    @key = key
+    if @key == nil
       set_key
+    else
+      @key = "." + key
     end
     the_shift = get_shift_hash
     encrypted_msg = ""
@@ -73,10 +74,11 @@ class Enigma
 
   def decrypt(ciphertext, key = @key, date = @date)
     @date = date
-    if @key[0] = "."
-      @key = "." + key
-    else
+    @key = key
+    if @key == nil
       set_key
+    else
+      @key = "." + key
     end
     the_shift = get_shift_hash
     decrypted_msg = ""

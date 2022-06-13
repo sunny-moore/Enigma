@@ -10,8 +10,8 @@ describe Enigma do
     it "exists" do
       expect(@cipher).to be_a Enigma
     end
-    it "starts with an default string key" do
-      expect(@cipher.key).to eq(".000000")
+    it "starts with an default key = nil" do
+      expect(@cipher.key).to eq(nil)
     end
     it "starts with a default date of today in MMDDYY" do
       expect(@cipher.date).to eq(Date.today.strftime("%m%d%y"))
@@ -70,6 +70,22 @@ describe Enigma do
       expect(expected[:key]).to eq("02715")
       expect(expected[:date]).to eq("040895")
     end
+    it "can encrypt a message with only a key (use todays date)" do
+      expected = @cipher.encrypt("hello world", "02715")
+      expect(expected[:encryption].length).to eq(11)
+      expect(expected[:key]).to eq("02715")
+      expect(expected[:date]).to eq(Date.today.strftime("%m%d%y"))
+    end
+    it "can encrypt a message (random key and use todays date)" do
+      expected = @cipher.encrypt("hello world")
+      key = @cipher.key[1, 5]
+      date = Date.today.strftime("%m%d%y")
+      decrypted = @cipher.decrypt(expected[:encryption], key, date)
+      expect(expected[:encryption].length).to eq(11)
+      expect(expected[:key]).to eq(key)
+      expect(expected[:date]).to eq(Date.today.strftime("%m%d%y"))
+      expect(decrypted[:decryption]).to eq("hello world")
+    end
     it "encrypts characters not in the character set as themselves" do
       expected = @cipher.encrypt("hello world!", "02715", "040895")
       expect(expected[:encryption]).to eq("keder ohulw!")
@@ -83,6 +99,15 @@ describe Enigma do
       expect(expected[:decryption]).to eq("hello world")
       expect(expected[:key]).to eq("02715")
       expect(expected[:date]).to eq("040895")
+    end
+    it "can decrypt a message w/ given key(use today date)" do
+      encrypted = @cipher.encrypt("hello world")
+      key = @cipher.key[1, 5]
+
+      expected = @cipher.decrypt(encrypted[:encryption], key)
+      expect(expected[:decryption]).to eq("hello world")
+      expect(expected[:key]).to eq(key)
+      expect(expected[:date]).to eq(Date.today.strftime("%m%d%y"))
     end
     it "decrypts characters not in the character set as themselves" do
       expected = @cipher.decrypt("keder ohulw!", "02715", "040895")
