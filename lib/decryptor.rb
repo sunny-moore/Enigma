@@ -18,10 +18,11 @@ class Decryptor
     @decrypt_result = Hash.new
   end
 
-  def start(incoming_file = ARGV[0], outgoing_file = ARGV[1])
+  def start(incoming_file = ARGV[0], outgoing_file = ARGV[1], key = ARGV[2], date = ARGV[3])
     @incoming_text = open(incoming_file)
-    decrypt(key = "02715", date = "040895")
+    decrypt(key, date)
     write(outgoing_file, @outgoing_text)
+    puts "Created '#{outgoing_file}' with the key #{@decrypt_result[:key]} and date #{@decrypt_result[:date]}"
   end
 
   def decrypt(key, date)

@@ -1,0 +1,3823 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>Code coverage for Enigma</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src='./assets/0.12.3/application.js' type='text/javascript'></script>
+    <link href='./assets/0.12.3/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_green.png" />
+    <link rel="icon" type="image/png" href="./assets/0.12.3/favicon.png" />
+  </head>
+
+  <body>
+    <div id="loading">
+      <img src="./assets/0.12.3/loading.gif" alt="loading"/>
+    </div>
+    <div id="wrapper" class="hide">
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-06-12T14:43:43-07:00">2022-06-12T14:43:43-07:00</abbr></div>
+      <ul class="group_tabs"></ul>
+
+      <div id="content">
+        <div class="file_list_container" id="AllFiles">
+  <h2>
+    <span class="group_name">All Files</span>
+    (<span class="covered_percent">
+      <span class="green">
+  98.71%
+</span>
+
+     </span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         5.35
+       </span>
+    </span> hits/line
+    )
+  </h2>
+
+  <a name="AllFiles"></a>
+
+  <div>
+    <b>5</b> files in total.
+  </div>
+
+  <div class="t-line-summary">
+    <b>232</b> relevant lines,
+    <span class="green"><b>229</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed. </span>
+    (<span class="green">
+  98.71%
+</span>
+)
+  </div>
+
+  
+
+  <div class="file_list--responsive">
+    <table class="file_list">
+      <thead>
+        <tr>
+          <th>File</th>
+          <th class="cell--number">% covered</th>
+          <th class="cell--number">Lines</th>
+          <th class="cell--number">Relevant Lines</th>
+          <th class="cell--number">Lines covered</th>
+          <th class="cell--number">Lines missed</th>
+          <th class="cell--number">Avg. Hits / Line</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#6d7361b5e748884509cd641ec9bf2e4406f6d932" class="src_link" title="lib/encryptor.rb">lib/encryptor.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">3.11</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#ba2a89e6a4475ecff1866f08a3a6dd29f37f4ede" class="src_link" title="lib/enigma.rb">lib/enigma.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">95.45 %</td>
+            <td class="cell--number">94</td>
+            <td class="cell--number">66</td>
+            <td class="cell--number">63</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">15.11</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#e4b99037fdb85ce6c576b16e729c4daeb6e67e54" class="src_link" title="lib/file_handler.rb">lib/file_handler.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.33</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#bad6a621725d6641d3ac841a9f8ef3a7b12ac383" class="src_link" title="spec/encryptor_spec.rb">spec/encryptor_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">82</td>
+            <td class="cell--number">61</td>
+            <td class="cell--number">61</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.15</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#de269f97a690f4112e55d3f8c0f1aa4bcb420544" class="src_link" title="spec/enigma_spec.rb">spec/enigma_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">95</td>
+            <td class="cell--number">74</td>
+            <td class="cell--number">74</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.19</td>
+            
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+        
+      </div>
+
+      <div id="footer">
+        Generated by <a href="https://github.com/simplecov-ruby/simplecov">simplecov</a> v0.21.2
+        and simplecov-html v0.12.3<br/>
+        using RSpec
+      </div>
+
+      <div class="source_files">
+      
+        <div class="source_table" id="6d7361b5e748884509cd641ec9bf2e4406f6d932">
+  <div class="header">
+    <h3>lib/encryptor.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>19</b> relevant lines.
+      <span class="green"><b>19</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;pry&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;date&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;./lib/enigma&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;./lib/file_handler&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Encryptor</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  include FileHandler</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  attr_reader :enigma,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">              :incoming_text,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">              :outgoing_text,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">              :encrypt_result</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def initialize()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="15">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    @enigma = Enigma.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="16">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    @incoming_text = &quot;&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="17">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    @outgoing_text = &quot;&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="18">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    @encrypt_result = Hash.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def start(incoming_file = ARGV[0], outgoing_file = ARGV[1])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @incoming_text = open(incoming_file)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    encrypt(key = &quot;02715&quot;, date = &quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    write(outgoing_file, @outgoing_text)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def encrypt(key, date)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="28">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    @encrypt_result = @enigma.encrypt(@incoming_text, key, date)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="29">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    @outgoing_text = @encrypt_result[:encryption]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="ba2a89e6a4475ecff1866f08a3a6dd29f37f4ede">
+  <div class="header">
+    <h3>lib/enigma.rb</h3>
+    <h4>
+      <span class="green">
+  95.45%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>66</b> relevant lines.
+      <span class="green"><b>63</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;pry&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;date&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Enigma</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  attr_reader :char_set, :key, :date</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def initialize()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="25" data-linenumber="8">
+            <span class="hits">25</span>
+            
+
+            
+
+            <code class="ruby">    @char_set = (&quot;a&quot;..&quot;z&quot;).to_a &lt;&lt; &quot; &quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="25" data-linenumber="9">
+            <span class="hits">25</span>
+            
+
+            
+
+            <code class="ruby">    @key = &quot;.000000&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="25" data-linenumber="10">
+            <span class="hits">25</span>
+            
+
+            
+
+            <code class="ruby">    @date = Date.today.strftime(&quot;%m%d%y&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def random_number()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="13">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    num = rand().round(10)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def set_key</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="16">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    str = random_number.to_s[1,6]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="17">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    @key = str</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def get_key_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="21">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">    key_hash = Hash.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="22">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">    i = 1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="23">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">    while i &lt; 5</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="44" data-linenumber="24">
+            <span class="hits">44</span>
+            
+
+            
+
+            <code class="ruby">      key_hash[i] = @key[i, 2].to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="44" data-linenumber="25">
+            <span class="hits">44</span>
+            
+
+            
+
+            <code class="ruby">      i += 1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="27">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">    key_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def get_offset_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="31">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">    num = date.to_i ** 2</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="32">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">    str = num.to_s[-4, 4]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="33">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">    offset_hash = Hash.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="34">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">    i = 1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="35">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">    while i &lt; 5</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="44" data-linenumber="36">
+            <span class="hits">44</span>
+            
+
+            
+
+            <code class="ruby">      offset_hash[i] = str[i-1].to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="44" data-linenumber="37">
+            <span class="hits">44</span>
+            
+
+            
+
+            <code class="ruby">      i += 1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="39">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">    offset_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def get_shift_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="43">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    shift_hash = Hash.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="44">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    key_hash = get_key_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="45">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    offset_hash = get_offset_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="46">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    i = 1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="47">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    while i &lt; 5</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="40" data-linenumber="48">
+            <span class="hits">40</span>
+            
+
+            
+
+            <code class="ruby">      shift_hash[i] = key_hash[i] + offset_hash[i]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="40" data-linenumber="49">
+            <span class="hits">40</span>
+            
+
+            
+
+            <code class="ruby">      i += 1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="50">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="51">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    shift_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def encrypt(message, key = @key, date = @date)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="54">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    @date = date</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="55">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    if @key[0] = &quot;.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="56">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">      @key = &quot;.&quot; + key</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby">      set_key</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="59">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="60">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    the_shift = get_shift_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="61">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    encrypted_msg = &quot;&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="62">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    message.downcase.chars.each_with_index do |char, i|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="93" data-linenumber="63">
+            <span class="hits">93</span>
+            
+
+            
+
+            <code class="ruby">      if char_set.include?(char) == false</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="64">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">        encrypted_msg += char</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="65">
+            
+            
+
+            
+
+            <code class="ruby">      else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="88" data-linenumber="66">
+            <span class="hits">88</span>
+            
+
+            
+
+            <code class="ruby">        rotated = @char_set.rotate(@char_set.index(char))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="88" data-linenumber="67">
+            <span class="hits">88</span>
+            
+
+            
+
+            <code class="ruby">        shift_index = the_shift[i % 4 + 1] % 27</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="88" data-linenumber="68">
+            <span class="hits">88</span>
+            
+
+            
+
+            <code class="ruby">        encrypted_msg += rotated[shift_index]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="70">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="71">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    {:encryption =&gt; encrypted_msg, :key =&gt; @key[1,5], :date =&gt; @date}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="73">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="74">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def decrypt(ciphertext, key = @key, date = @date)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="75">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @date = date</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="76">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    if @key[0] = &quot;.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="77">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @key = &quot;.&quot; + key</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="78">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="79">
+            
+            
+
+            
+
+            <code class="ruby">      set_key</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="81">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    the_shift = get_shift_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="82">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    decrypted_msg = &quot;&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="83">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    ciphertext.downcase.chars.each_with_index do |char, i|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="84">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">      if char_set.include?(char) == false</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="85">
+            
+            
+
+            
+
+            <code class="ruby">        decrypted_msg += char</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="86">
+            
+            
+
+            
+
+            <code class="ruby">      else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="87">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">        rotated = @char_set.rotate(@char_set.index(char) + 1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="88">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">        shift_index = (the_shift[i % 4 + 1] % 27)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="89">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">        decrypted_msg += rotated[rotated.length - (shift_index + 1)]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="90">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="91">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="92">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    {:encryption =&gt; decrypted_msg, :key =&gt; @key[1,5], :date =&gt; @date}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="93">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="94">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="e4b99037fdb85ce6c576b16e729c4daeb6e67e54">
+  <div class="header">
+    <h3>lib/file_handler.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>12</b> relevant lines.
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;pry&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module FileHandler</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def open(filename)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="6">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    handler = File.open(filename, &quot;r&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="7">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    @incoming_text = handler.read</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="8">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    handler.close</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="9">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    @incoming_text</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def write(filename, message)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="13">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    writer = File.open(filename, &quot;w&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="14">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    writer.write(message)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="15">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    writer.close</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="16">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    message</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="bad6a621725d6641d3ac841a9f8ef3a7b12ac383">
+  <div class="header">
+    <h3>spec/encryptor_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>61</b> relevant lines.
+      <span class="green"><b>61</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;pry&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;RSpec&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;date&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;enigma&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;encryptor&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe Encryptor do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before :each do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="9">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">    @encryptor = Encryptor.new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &quot;exists&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(@encryptor).to be_a Encryptor</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &quot;starts with an Enigma object&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(@encryptor.enigma).to be_a Enigma</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &quot;starts with an empty incoming_text variable&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(@encryptor.incoming_text).to be_a String</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(@encryptor.incoming_text).to eq(&quot;&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  context &#39;file_handler module methods&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can read in a msg file (&#39;hello world&#39;)&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">      #\n means length will be one more than msg</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @encryptor.open(&quot;message.txt&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.incoming_text).to be_a String</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.incoming_text.length).to eq(12)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.incoming_text).to eq(&quot;hello world\n&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(File.open(&quot;message.txt&quot;).count).to eq(1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="31">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;starts with an empty outgoing_text variable&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.outgoing_text).to be_a String</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.outgoing_text).to eq(&quot;&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;starts with an empty encrypt_result hash&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="36">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.encrypt_result).to be_a Hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="37">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.encrypt_result).to eq({})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can encrypt incoming txt and store in encrypt_result&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @encryptor.open(&quot;message.txt&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @encryptor.encrypt(&quot;02715&quot;, &quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.encrypt_result).to be_a Hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="43">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.encrypt_result[:encryption]).to eq(&quot;keder ohulw\n&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.encrypt_result[:key]).to eq(&quot;02715&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.encrypt_result[:date]).to eq(&quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can write in encrypted.txt file (&#39;keder ohulw\n&#39;)&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">      #\n means length will be one more than msg</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @encryptor.open(&quot;message.txt&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @encryptor.encrypt(&quot;02715&quot;, &quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="51">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @encryptor.write(&quot;encrypted.txt&quot;, @encryptor.outgoing_text)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.outgoing_text).to be_a String</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.outgoing_text.length).to eq(12)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.outgoing_text).to eq(&quot;keder ohulw\n&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="56">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      handler = File.open(&quot;encrypted.txt&quot;, &quot;r&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = handler.read</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="58">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      handler.close</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="59">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="60">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected).to be_a String</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="61">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected.length).to eq(12)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected).to eq(&quot;keder ohulw\n&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="63">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;has a start method to open file, encrypt and write file&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @encryptor.start(&quot;message.txt&quot;, &quot;encrypted.txt&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="66">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="67">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.incoming_text).to eq(&quot;hello world\n&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(File.open(&quot;message.txt&quot;).count).to eq(1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="69">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@encryptor.outgoing_text).to eq(&quot;keder ohulw\n&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="70">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(File.readable?(&quot;encrypted.txt&quot;)).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="72">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;creates encrypted.txt file with encrypted message&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="73">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      handler = File.open(&quot;encrypted.txt&quot;, &quot;r&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="74">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = handler.read</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="75">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      handler.close</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="77">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected).to be_a String</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="78">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected.length).to eq(12)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="79">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected).to eq(&quot;keder ohulw\n&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="82">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="de269f97a690f4112e55d3f8c0f1aa4bcb420544">
+  <div class="header">
+    <h3>spec/enigma_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>74</b> relevant lines.
+      <span class="green"><b>74</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;pry&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;RSpec&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;date&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;enigma&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe Enigma do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    before :each do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="15" data-linenumber="8">
+            <span class="hits">15</span>
+            
+
+            
+
+            <code class="ruby">      @cipher = Enigma.new()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;exists&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher).to be_a Enigma</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;starts with an default string key&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher.key).to eq(&quot;.000000&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;starts with a default date of today in MMDDYY&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher.date).to eq(Date.today.strftime(&quot;%m%d%y&quot;))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;has a stored character set&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher.char_set).to be_a Array</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher.char_set).to eq([&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">        &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot; &quot;])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can generate a random decimal float ex: 0.012345&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">      #There should be 10 numbers after the decimal to allow for a leading or trailing zero. We will use first 5</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher.random_number).to be_a Float</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher.random_number).to be &lt; 1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher.random_number).to be &gt; 0</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can set the key variable to a string version of random number&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">      #ex: &quot;.01234. I want the decimal&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @cipher.set_key</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher.key).to be_a String</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher.key[0]).to eq(&quot;.&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cipher.key.length).to eq(6)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="37">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can return a hash with 4 integer values from key&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @cipher.set_key</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = @cipher.get_key_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected).to be_a Hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected.length).to eq(4)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[1]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="43">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[2]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[3]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[4]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can calculate offset based on date and return a hash of integer key/value pairs&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="48">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @cipher.set_key</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = @cipher.get_offset_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected).to be_a Hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="51">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected.length).to eq(4)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[1]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[2]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[3]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="55">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[4]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can return a shift hash based on key and offset hashes&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="58">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @cipher.set_key</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = @cipher.get_shift_hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="60">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected).to be_a Hash</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="61">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected.length).to eq(4)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[1]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[2]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[3]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[4]).to be_a Integer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="66">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="67">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can encrypt a message with given key and date&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = @cipher.encrypt(&quot;hello world&quot;, &quot;02715&quot;, &quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="69">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[:encryption]).to eq(&quot;keder ohulw&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="70">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[:key]).to eq(&quot;02715&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="71">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[:date]).to eq(&quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="73">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;encrypts characters not in the character set as themselves&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="74">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = @cipher.encrypt(&quot;hello world!&quot;, &quot;02715&quot;, &quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="75">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[:encryption]).to eq(&quot;keder ohulw!&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="77">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;encrypts capital letters as lowercase&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="78">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = @cipher.encrypt(&quot;Hello World&quot;, &quot;02715&quot;, &quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="79">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[:encryption]).to eq(&quot;keder ohulw&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="81">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can decrypt a message with given key and date&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="82">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = @cipher.decrypt(&quot;keder ohulw&quot;, &quot;02715&quot;, &quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="83">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[:encryption]).to eq(&quot;hello world&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="84">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[:key]).to eq(&quot;02715&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="85">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[:date]).to eq(&quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="86">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="87">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;decrypts characters not in the character set as themselves&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="88">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = @cipher.encrypt(&quot;hello world!&quot;, &quot;02715&quot;, &quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="89">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[:encryption]).to eq(&quot;keder ohulw!&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="90">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="91">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;decrypts capital letters as lowercase&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="92">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expected = @cipher.encrypt(&quot;Hello World&quot;, &quot;02715&quot;, &quot;040895&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="93">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(expected[:encryption]).to eq(&quot;keder ohulw&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="94">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="95">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+      </div>
+    </div>
+  </body>
+</html>

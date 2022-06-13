@@ -54,6 +54,7 @@ class Enigma
     @date = date
     @key = key
     check_key(@key)
+    check_date(@date)
     the_shift = get_shift_hash
     encrypted_msg = ""
     message.downcase.chars.each_with_index do |char, i|
@@ -71,11 +72,8 @@ class Enigma
   def decrypt(ciphertext, key = @key, date = @date)
     @date = date
     @key = key
-    if @key == nil
-      set_key
-    else
-      @key = "." + key
-    end
+    check_key(@key)
+    check_date(@date)
     the_shift = get_shift_hash
     decrypted_msg = ""
     ciphertext.downcase.chars.each_with_index do |char, i|
