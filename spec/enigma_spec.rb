@@ -13,7 +13,7 @@ describe Enigma do
     it "starts with an default key = nil" do
       expect(@cipher.key).to eq(nil)
     end
-    it "starts with a default date of today in MMDDYY" do
+    it "starts with a default date of nil" do
       expect(@cipher.date).to eq(Date.today.strftime("%m%d%y"))
     end
     it "has a stored character set" do
@@ -63,6 +63,19 @@ describe Enigma do
       expect(expected[2]).to be_a Integer
       expect(expected[3]).to be_a Integer
       expect(expected[4]).to be_a Integer
+    end
+    it "can check if the key is nil and set it to random number" do
+      current_key = @cipher.key
+      expect(current_key).to eq(nil)
+      @cipher.check_key(current_key)
+      expect(@cipher.key).not_to eq(nil)
+      expect(@cipher.key.length).to eq(6)
+    end
+    it "can check if the date is nil and set to todays date" do
+      date = nil
+      @cipher.check_date(date)
+      expect(@cipher.date).not_to eq(nil)
+      expect(@cipher.date).to eq(Date.today.strftime("%m%d%y"))
     end
     it "can encrypt a message with given key and date" do
       expected = @cipher.encrypt("hello world", "02715", "040895")
