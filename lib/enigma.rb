@@ -31,14 +31,13 @@ class Enigma
   def decrypt(ciphertext, key = @key, date = @date)
     check_key(key)
     check_date(date)
-    the_shift = get_shift_hash
     decrypted_msg = ""
     ciphertext.downcase.chars.each_with_index do |char, i|
       if char_set.include?(char) == false
         decrypted_msg += char
       else
         rotated = @char_set.rotate(@char_set.index(char) + 1)
-        shift_index = (the_shift[i % 4 + 1] % 27)
+        shift_index = (get_shift_hash[i % 4 + 1] % 27)
         decrypted_msg += rotated[rotated.length - (shift_index + 1)]
       end
     end
